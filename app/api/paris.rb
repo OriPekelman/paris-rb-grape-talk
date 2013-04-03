@@ -17,6 +17,11 @@ module Paris
         Talk.find(params[:id])
       end
     end     
-
+  end
+end
+module Paris      
+  class Root < Grape::API   
+    mount Paris::RB
+    add_swagger_documentation :base_path=>"http://localhost:3000/api", :mount_path =>"v1/doc", :markdown => false, :api_version => Paris::RB.version, :hide_documentation_path =>false
   end
 end

@@ -148,6 +148,9 @@ GEM
       rack-accept
       rack-mount
       virtus
+    grape-swagger (0.5.0)
+      grape (>= 0.2.0)
+      kramdown
     guard (1.7.0)
       formatador (>= 0.2.4)
       listen (>= 0.6.0)
@@ -168,6 +171,7 @@ GEM
       thor (>= 0.14, < 2.0)
     jwt (0.1.8)
       multi_json (>= 1.5)
+    kramdown (1.0.1)
     libv8 (3.11.8.17)
     listen (0.7.3)
     lumberjack (1.0.3)
@@ -293,6 +297,7 @@ DEPENDENCIES
   ffaker
   font-awesome-sass-rails
   grape
+  grape-swagger
   guard-rspec
   hashugar!
   jbuilder (~> 1.0.1)
