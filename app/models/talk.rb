@@ -7,4 +7,6 @@ class Talk
   field :user_id, type: String
   field :level, type: String
   field :duration, type: Integer
+  belongs_to :meetup
+  belongs_to :user
 end

@@ -7,4 +7,6 @@ class Meetup
   field :start_hour, type: Time
   field :end_hour, type: Time
   field :meetup_url, type: String
+  has_many :talks
+  belongs_to :location
 end
