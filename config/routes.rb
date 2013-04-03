@@ -1,4 +1,5 @@
 Parisrb::Application.routes.draw do
+  mount Paris::RB => '/api'
   
   devise_for :users, :controllers => {
     registrations: "users/registrations", 

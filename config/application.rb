@@ -12,6 +12,8 @@ Bundler.require(*Rails.groups(assets: %w(development test)))
 
 module Parisrb
   class Application < Rails::Application
+    config.paths.add "app/api", :glob => "**/*.rb"
+    config.autoload_paths += Dir["#{Rails.root}/app/api/*"]
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
