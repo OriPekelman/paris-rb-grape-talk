@@ -24,7 +24,7 @@ class TalksController < ApplicationController
   # POST /talks
   # POST /talks.json
   def create
-    @talk = Talk.new(talk_params)
+    @talk = Talk.new(talk_params.merge({:user_id => current_user.id}))
 
     respond_to do |format|
       if @talk.save
