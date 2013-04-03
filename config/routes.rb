@@ -1,20 +1,22 @@
 Parisrb::Application.routes.draw do
   
-  resources :talks
-
-  resources :meetups
-
-  resources :locations
-
   devise_for :users, :controllers => {
     registrations: "users/registrations", 
     passwords: "users/passwords", 
     omniauth_callbacks: "users/omniauth_callbacks"
   }
 
-  resources :users
-  root :to => "home#index"
-  get "home/index"
+  
+  authenticated :user do
+    root :to => "talks#index"
+    resources :talks
+    resources :meetups
+    resources :locations
+    resources :users
+  end
+  
+  root :to => "home#index", :as => :anon_home
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
