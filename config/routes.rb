@@ -1,5 +1,11 @@
 Parisrb::Application.routes.draw do
   
+  resources :talks
+
+  resources :meetups
+
+  resources :locations
+
   devise_for :users, :controllers => {
     registrations: "users/registrations", 
     passwords: "users/passwords", 
