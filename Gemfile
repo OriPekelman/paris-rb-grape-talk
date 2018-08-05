@@ -42,5 +42,5 @@ gem "omniauth"
 gem "omniauth-github"
 gem "omniauth-twitter"
 gem "hashugar", github: "alex-klepa/hashugar"
-gem 'grape'
-gem 'grape-swagger'
+gem 'grape', '>= 1.1.0'
+gem 'grape-swagger', '>= 0.5.0'
