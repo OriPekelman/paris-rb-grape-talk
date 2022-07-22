@@ -32,7 +32,7 @@ end
 
 gem "jquery-rails"
 gem "turbolinks"
-gem "jbuilder", "~> 1.0.1"
+gem "jbuilder", "~> 1.0.2"
 gem "bootstrap-sass", "~> 2.3.0.1"
 gem "font-awesome-sass-rails"
 gem "simple_form", github: "plataformatec/simple_form"
