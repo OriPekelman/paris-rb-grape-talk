@@ -7,7 +7,7 @@ group :assets do
   gem "sass-rails", github: "rails/sass-rails"
   gem "coffee-rails", github: "rails/coffee-rails"
   gem "therubyracer", platforms: :ruby
-  gem "uglifier", ">= 1.0.3"
+  gem "uglifier", ">= 2.7.2"
 end
 
 group :development do
@@ -30,17 +30,17 @@ group :test do
   gem "database_cleaner"
 end
 
-gem "jquery-rails"
-gem "turbolinks"
-gem "jbuilder", "~> 1.0.1"
-gem "bootstrap-sass", "~> 2.3.0.1"
+gem "jquery-rails", ">= 4.4.0"
+gem "turbolinks", ">= 5.0.0"
+gem "jbuilder", "~> 1.0.2"
+gem "bootstrap-sass", "~> 3.4.0.0"
 gem "font-awesome-sass-rails"
 gem "simple_form", github: "plataformatec/simple_form"
 gem "devise", git: "https://github.com/plataformatec/devise.git", branch: "rails4"
 gem "cancan"
-gem "omniauth"
-gem "omniauth-github"
+gem "omniauth", ">= 2.0.0"
+gem "omniauth-github", ">= 2.0.0"
 gem "omniauth-twitter"
 gem "hashugar", github: "alex-klepa/hashugar"
-gem 'grape'
+gem 'grape', '>= 1.1.0'
 gem 'grape-swagger'
