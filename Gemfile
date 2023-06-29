@@ -19,8 +19,8 @@ end
 
 group :development, :test do
   gem "zeus"
-  gem "rspec-rails"
-  gem "factory_girl_rails"
+  gem "rspec-rails", ">= 2.13.1"
+  gem "factory_girl_rails", ">= 4.3.0"
 end
 
 group :test do
@@ -30,8 +30,8 @@ group :test do
   gem "database_cleaner"
 end
 
-gem "jquery-rails"
-gem "turbolinks"
+gem "jquery-rails", ">= 4.0.1"
+gem "turbolinks", ">= 1.1.1"
 gem "jbuilder", "~> 1.0.1"
 gem "bootstrap-sass", "~> 2.3.0.1"
 gem "font-awesome-sass-rails"
