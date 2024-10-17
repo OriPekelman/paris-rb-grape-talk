@@ -31,7 +31,7 @@ group :test do
 end
 
 gem "jquery-rails"
-gem "turbolinks"
+gem "turbolinks", ">= 5.0.0"
 gem "jbuilder", "~> 1.0.1"
 gem "bootstrap-sass", "~> 2.3.0.1"
 gem "font-awesome-sass-rails"
