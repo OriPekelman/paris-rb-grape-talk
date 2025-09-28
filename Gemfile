@@ -13,14 +13,14 @@ end
 group :development do
   gem "guard-rspec"
   gem "pry"
-  gem "quiet_assets"
-  gem "thin"
+  gem "quiet_assets", ">= 1.0.3"
+  gem "thin", ">= 1.6.0"
 end
 
 group :development, :test do
   gem "zeus"
-  gem "rspec-rails"
-  gem "factory_girl_rails"
+  gem "rspec-rails", ">= 2.13.1"
+  gem "factory_girl_rails", ">= 4.3.0"
 end
 
 group :test do
@@ -30,17 +30,17 @@ group :test do
   gem "database_cleaner"
 end
 
-gem "jquery-rails"
-gem "turbolinks"
+gem "jquery-rails", ">= 4.0.1"
+gem "turbolinks", ">= 1.1.1"
 gem "jbuilder", "~> 1.0.1"
 gem "bootstrap-sass", "~> 2.3.0.1"
 gem "font-awesome-sass-rails"
 gem "simple_form", github: "plataformatec/simple_form"
 gem "devise", git: "https://github.com/plataformatec/devise.git", branch: "rails4"
 gem "cancan"
-gem "omniauth"
-gem "omniauth-github"
-gem "omniauth-twitter"
+gem "omniauth", ">= 1.1.4"
+gem "omniauth-github", ">= 1.1.1"
+gem "omniauth-twitter", ">= 0.0.16"
 gem "hashugar", github: "alex-klepa/hashugar"
-gem 'grape'
-gem 'grape-swagger'
+gem 'grape', '>= 0.5.0'
+gem 'grape-swagger', '>= 0.6.0'
